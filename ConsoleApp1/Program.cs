@@ -10,7 +10,7 @@ string filePathGeneral =@$"{folderURL}\general.json";
 string filePathCosts = @$"{folderURL}\costs.json";                                
 string filePathGood = @$"{folderURL}\goods.json";                              
 
-Console.WriteLine(folderURL  );
+
 
 List<General> generals = JsonSerializer.Deserialize<List<General>>(File.ReadAllText(filePathGeneral));
 List<Cost> costs = JsonSerializer.Deserialize<List<Cost>>(File.ReadAllText(filePathCosts));
