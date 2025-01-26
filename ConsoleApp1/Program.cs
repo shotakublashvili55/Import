@@ -20,5 +20,5 @@ List<Good> products = JsonSerializer.Deserialize<List<Good>>(File.ReadAllText(fi
 Calculate.Caltulate_(generals, costs, products);
 Console.WriteLine("\n\n\n\n\n\n\n\n");
 
-
-Thread.Sleep(15000);
+string keep = Console.ReadLine();
+//Thread.Sleep(15000);
