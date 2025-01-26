@@ -29,15 +29,18 @@ internal class Calculate
 
         if (Math.Abs(general.TotalSumWithDiscount - TotalInvoiceAmmount) > 0.1m)
         {
+            Console.Clear();
             Console.WriteLine("Check the Ammounts");
-            Environment.Exit(0);
+             string keep = Console.ReadLine();
+
+          //  Environment.Exit(0);
         }
 
 
         if (Prepayment <= 0)
         {
 
-            TotalSumWithDiscountGel = general.TotalSumWithDiscount * NBG.NBG_(general.DocumentDate, general.DocumentDate);// general.ExchangeRateManual; ;
+            TotalSumWithDiscountGel = general.TotalSumWithDiscount * NBG.NBG_(general.DocumentDate, general.DocumentCurrency);// general.ExchangeRateManual; ;
         }
 
         else if (Prepayment >= general.TotalSumWithDiscount)
@@ -52,8 +55,12 @@ internal class Calculate
 
         else
         {
+
+            Console.Clear();
             Console.WriteLine("Check the Ammounts");
-            Environment.Exit(0);
+         
+            string keep = Console.ReadLine();
+          //  Environment.Exit(0);
 
         }
 
@@ -99,8 +106,11 @@ internal class Calculate
 
                     else
                     {
-                        Console.WriteLine("Check the Ammounts");
-                        Environment.Exit(0);
+                    Console.Clear();
+                    Console.WriteLine("Check the Ammounts");
+            
+                    string keep = Console.ReadLine();
+                   // Environment.Exit(0);
 
                     }
 

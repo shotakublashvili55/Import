@@ -21,4 +21,3 @@ Calculate.Caltulate_(generals, costs, products);
 Console.WriteLine("\n\n\n\n\n\n\n\n");
 
 string keep = Console.ReadLine();
-//Thread.Sleep(15000);

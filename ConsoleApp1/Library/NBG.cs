@@ -57,8 +57,12 @@ internal class NBG
         if (CurrencyCode != "" && CurrencyCode != "GEL") { 
         if (RateFin == 1 && (CurrencyCode != "" || CurrencyCode != "GEL"))
         {
-            Console.WriteLine("NBG.GOV.GE Error. Operation Aborted");
-            Environment.Exit(0);
+
+                Console.Clear();
+                Console.WriteLine("NBG.GOV.GE Error. Operation Aborted");
+    
+                string keep = Console.ReadLine();
+               // Environment.Exit(0);
         }
          }
 
