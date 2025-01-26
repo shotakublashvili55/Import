@@ -13,7 +13,7 @@ internal class Cost
     public string CostDate { get; set; }
     public decimal CostExchangeRate { get; set; }
     public bool VAT { get; set; }
-    public bool PENSION { get; set; }
+    public string SupplierTaxType { get; set; }
     public bool WeightProportion { get; set; }
 
     public decimal PrepaymentSum1 { get; set; }
@@ -31,7 +31,7 @@ internal class Cost
     public string PrepaymentDate3 { get; set; }
     public decimal PrepaymentExchangeRate3 { get; set; }
 
-    public Cost(bool international, string description, string costCompanyId, string costCompanyName, decimal costSum, string costCurrency, string costDate, decimal costExchangeRate, bool vAT, bool pENSION, bool weightProportion, decimal prepaymentSum1, string prepaymentCurrency1, string prepaymentDate1, decimal prepaymentExchangeRate1, decimal prepaymentSum2, string prepaymentCurrency2, string prepaymentDate2, decimal prepaymentExchangeRate2, decimal prepaymentSum3, string prepaymentCurrency3, string prepaymentDate3, decimal prepaymentExchangeRate3)
+    public Cost(bool international, string description, string costCompanyId, string costCompanyName, decimal costSum, string costCurrency, string costDate, decimal costExchangeRate, bool vAT, string supplierTaxType, bool weightProportion, decimal prepaymentSum1, string prepaymentCurrency1, string prepaymentDate1, decimal prepaymentExchangeRate1, decimal prepaymentSum2, string prepaymentCurrency2, string prepaymentDate2, decimal prepaymentExchangeRate2, decimal prepaymentSum3, string prepaymentCurrency3, string prepaymentDate3, decimal prepaymentExchangeRate3)
     {
         International = international;
         Description = description;
@@ -42,7 +42,7 @@ internal class Cost
         CostDate = costDate;
         CostExchangeRate = costExchangeRate;
         VAT = vAT;
-        PENSION = pENSION;
+        SupplierTaxType = supplierTaxType;
         WeightProportion = weightProportion;
         PrepaymentSum1 = prepaymentSum1;
         PrepaymentCurrency1 = prepaymentCurrency1;

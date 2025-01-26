@@ -9,9 +9,11 @@ internal class General
     public string DeclarationANumber { get; set; }
     public string DeclarationCNumber { get; set; }
     public string Supplier { get; set; }
-    public string InvoiceDate { get; set; }
-    public string InvoiceCurrency { get; set; }
-    public decimal InvoiceExchangeRate { get; set; }
+
+    public string SupplierID { get; set; }
+    public string DocumentDate { get; set; }
+    public string DocumentCurrency { get; set; }
+    public decimal DocumentExchangeRate { get; set; }
     public decimal TotalInvoiceSum { get; set; }
     public decimal Discount { get; set; }
     public decimal TotalSumWithDiscount { get; set; }
@@ -34,15 +36,16 @@ internal class General
     public string PrepaymentDate3 { get; set; }
     public decimal PrepaymentExchangeRate3 { get; set; }
 
-    public General(string date, string declarationANumber, string declarationCNumber, string supplier, string invoiceDate, string invoiceCurrency, decimal invoiceExchangeRate, decimal totalInvoiceSum, decimal discount, decimal totalSumWithDiscount, string incoterms, decimal exchangeRateManual, decimal exchangeRateAutomatic, decimal prepaymentSum1, string prepaymentCurrency1, string prepaymentDate1, decimal prepaymentExchangeRate1, decimal prepaymentSum2, string prepaymentCurrency2, string prepaymentDate2, decimal prepaymentExchangeRate2, decimal prepaymentSum3, string prepaymentCurrency3, string prepaymentDate3, decimal prepaymentExchangeRate3)
+    public General(string date, string declarationANumber, string declarationCNumber, string supplier, string supplierID, string documentDate, string documentCurrency, decimal documentExchangeRate, decimal totalInvoiceSum, decimal discount, decimal totalSumWithDiscount, string incoterms, decimal exchangeRateManual, decimal exchangeRateAutomatic, decimal prepaymentSum1, string prepaymentCurrency1, string prepaymentDate1, decimal prepaymentExchangeRate1, decimal prepaymentSum2, string prepaymentCurrency2, string prepaymentDate2, decimal prepaymentExchangeRate2, decimal prepaymentSum3, string prepaymentCurrency3, string prepaymentDate3, decimal prepaymentExchangeRate3)
     {
         Date = date;
         DeclarationANumber = declarationANumber;
         DeclarationCNumber = declarationCNumber;
         Supplier = supplier;
-        InvoiceDate = invoiceDate;
-        InvoiceCurrency = invoiceCurrency;
-        InvoiceExchangeRate = invoiceExchangeRate;
+        SupplierID = supplierID;
+        DocumentDate = documentDate;
+        DocumentCurrency = documentCurrency;
+        DocumentExchangeRate = documentExchangeRate;
         TotalInvoiceSum = totalInvoiceSum;
         Discount = discount;
         TotalSumWithDiscount = totalSumWithDiscount;
