@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
-namespace ConsoleApp1.Models;
+using ConsoleApp1.Models;
+
 
 internal class GeneralValidation: AbstractValidator<General>
 {

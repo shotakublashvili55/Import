@@ -1,7 +1,7 @@
 ﻿
 
 using ConsoleApp1.Models;
-
+using ConsoleApp1.Validators;
 namespace ConsoleApp1.Library;
 
 internal class Validate

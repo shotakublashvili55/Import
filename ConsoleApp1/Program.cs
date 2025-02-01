@@ -13,35 +13,26 @@ string filePathGood = @$"{folderURL}\goods.json";
 
 
 
-
-
 List<General> generals = JsonSerializer.Deserialize<List<General>>(File.ReadAllText(filePathGeneral));
 List<Cost> costs = JsonSerializer.Deserialize<List<Cost>>(File.ReadAllText(filePathCosts));
 List<Good> products = JsonSerializer.Deserialize<List<Good>>(File.ReadAllText(filePathGood));
 int errorQuantity= Validate.Validate_(generals, costs, products);
 
 
-
-
-
-
-
-if (errorQuantity==0)
+switch (errorQuantity)
 {
+    case 0:
+        Calculate.Calculate_(generals, costs, products);
 
-    Calculate.Calculate_(generals, costs, products);
+        break;
+    default:
+        Console.WriteLine($"\nerrors: {errorQuantity}");
 
-}
-else
-{
-
-    Console.WriteLine($"\n Data is invalid, errors {errorQuantity}");
-
+        break;
 }
 
 
 Console.WriteLine("\n\n\n\n\n\n\n\n");
-
 string keep = Console.ReadLine();
 
 

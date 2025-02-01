@@ -1,6 +1,7 @@
 ﻿
 using FluentValidation;
-namespace ConsoleApp1.Models;
+using ConsoleApp1.Models;
+namespace ConsoleApp1.Validators;
 
 internal class GoodValidation: AbstractValidator<Good>
 {
