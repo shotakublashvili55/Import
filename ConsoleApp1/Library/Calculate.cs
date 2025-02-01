@@ -8,7 +8,7 @@ namespace ConsoleApp1.Library;
 internal class Calculate
 {
 
-    public static void Caltulate_(List<General> generals, List<Cost> costs, List<Good> products)
+    public static void Calculate_(List<General> generals, List<Cost> costs, List<Good> products)
     {
         var general = generals.FirstOrDefault();
         decimal TotalInvoiceAmmount = 0;
